@@ -36,17 +36,17 @@ Prime Number
 
 class PrimeOrNot{
     public static void main(String[] args) {
-        int n = 1;
+        int n = 7;
         int i =2;
         int factors = 2;
-        while(i*i<=n){
+        while(i<n){
           if(n%i==0){//9%2
            factors++;
-           break;
+           i++;
           }
-          
+          else{
             i++;
-          
+          }
         }
         if(n <= 1 || factors > 2){
             System.err.println("Not a prime number");
